@@ -55,10 +55,6 @@ $("#starRate").blur(function () {
 });
 
 
-//select, 별점, textArea 유효성
-
-
-
 
 //리뷰 등록클릭시 로그인페이지 이동
 $("#viewBtn").click(function() {

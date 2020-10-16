@@ -1,24 +1,3 @@
-// $(window).resize(function() {
-//
-//        var size = window.outerWidth;
-//
-//        if(size<=1105) {
-//
-//            $("#nav").attr("id","gnb");
-//
-//        } else if (size>=1105) {
-//
-//            $("#gnb").attr("id","nav");
-//
-//        }
-//
-//    });
-
-//$("#gnb>ul>li").click(function(){
-//    $("#gnb>ul>li>ul").slideUp("normal"); //다 올려버리고
-//    $(this).children("ul").stop().slideDown("normal");//클릭한거 내려 
-//});
-
 
 //내비게이션
  $(".all").on("click",function(){

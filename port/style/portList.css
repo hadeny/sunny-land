@@ -11,7 +11,11 @@ table{margin:5px 0 0;}
 p{font-family:cooper-black-std, serif;color:#fff;font-size:25px;}
 span{font-size:15px;color:#fff;}
 td{height:30px;color:#fff;padding:5px 0 0 20px;}
-table td > a{background:url(../images/link_sprites.png) -0 -0;width:60px;height:32px;color:transparent;display:inline-block;}
-table td > a:hover{background:url(../images/link_sprites.png) -60px -0;}
-table td > a:nth-child(2){background:url(../images/link_sprites.png) -120px -0;margin:0 10px;}
-table td > a:nth-child(2):hover{background:url(../images/link_sprites.png) -180px -0;}
+table td > a{background:url(../images/link_sprites.png) -0 -0; width:60px;height:32px;color:transparent;display:inline-block;}
+table td > a:hover{background:url(../images/link_sprites.png) -0 -32px;}
+table td > a:nth-child(2){background:url(../images/link_sprites.png) -0 -64px;}
+table td > a:nth-child(2):hover{background:url(../images/link_sprites.png) -0 -96px;}
+table td > a:nth-child(3){background:url(../images/link_sprites.png) -0 -128px;}
+table td > a:nth-child(3):hover{background:url(../images/link_sprites.png) -0 -160px;}
+table td > a:nth-child(4){background:url(../images/link_sprites.png) -0 -192px; width:65px;}
+table td > a:nth-child(4):hover{background:url(../images/link_sprites.png) -0 -224px; width:65px;}
