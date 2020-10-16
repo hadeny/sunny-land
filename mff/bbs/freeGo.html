@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>자유 - 글쓰기</title>
+    <link rel="stylesheet" href="../main_style/styleTem.css">
+    <link rel="stylesheet" href="../main_style/style_bbs.css">
+</head>
+
+<body>
+     <div id="headerF">
+        <header id="header">
+            <div id="logo">
+                <a href="../index.html"><img src="../images/logo165_118.png" width="168" height="128" alt="logo"></a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">음악영화제</a>
+                        <ul>
+                            <li><a href="#">MFF 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">전년도 수상작</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="#">수상작</a></li>
+                            <li><a href="#">상영작</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Event</a>
+                        <ul>
+                            <li><a href="#">Goods</a></li>
+                            <li><a href="#">Gv일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ticket</a>
+                        <ul>
+                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="#">티켓안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                        <ul>
+                            <li><a href="../bbs/info.html">공지사항</a></li>
+                            <li><a href="../bbs/free.html">자유게시판</a></li>
+                            <li><a href="../bbs/review.html">네티즌 리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li class="bold">
+                        <a href="../login/login.html">로그인/회원가입</a>
+                        <ul>
+                            <li><a href="../login/login.html">로그인</a></li>
+                            <li><a href="../login/join.html">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div><!--headerF-->
+
+    <div id="con_wrap">
+        <div id="wrapRow">
+            <nav id="cnb">
+                <ul>
+                    <li>Community</li>
+                    <li><a href="../bbs/info.html">공지사항</a></li>
+                    <li class="selected"><a href="../bbs/free.html">자유게시판</a></li>
+                    <li><a href="../bbs/review.html">네티즌 리뷰</a></li>
+                </ul>
+            </nav>
+            <section id="contentInfo">
+                <h1>자유게시판 글쓰기</h1>
+                <span>
+                    <a href="../index.html">HOME</a>/<a href="#">COMMUNITY</a>/<a href="../bbs/free.html">자유게시판</a>
+                </span>
+                <div id="freebbs">
+                    <form action="free.html" method="post" name="frm02" enctype="multipart/form-data">
+                        <table>
+                            <tr>
+                                <td>
+                                    카테고리 &nbsp;
+                                    <select name="cate_bbs" id="cate_bbs">
+                                        <option value="recruit">채용</option>
+                                        <option value="proGram">프로그램</option>
+                                        <option value="event">이벤트</option>
+                                        <option value="etc" selected>기타</option>
+                                    </select>
+                                </td>
+                                <td>
+                                    제목 &nbsp;<input type="text" name="head" id="head">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    파일첨부 &nbsp;<input type="file" name="fileGo" id="fileGo">
+                                    <br><span>확장자 js, exe 파일 불가</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <textarea name="contents" id="content" cols="50" rows="15"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <button id="goWriteBtn">등록하기</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <!--freebbs-->
+            </section>
+            <!--contentInfo-->
+        </div>
+        <!--wrapRow-->
+    </div>
+    <!--con_wrap-->
+    <footer id="footer">
+        <div class="footerFrame">
+            <div id="foot_logo">
+                <div id="logoFoot">
+                    <img src="../images/logo165_118.png"  width="168" height="128" alt="logo">
+                </div>
+                <div id="footerP">
+                    <a href="#">개인정보취급방침</a> | <a href="#">이용약관</a>
+                    <div id="sns">
+                        <a href="#"><img src="../images/sns_1.png" width="50" height="50" alt="sns_1"></a>
+                        <a href="#"><img src="../images/sns_2.png" width="50" height="50" alt="sns_2"></a>
+                        <a href="#"><img src="../images/sns_3.png" width="50" height="50" alt="sns_3"></a>
+                    </div><br><br>
+                    14545 경기 부천시 상동 541-1 메가플러스타워 6층 A동 602호 032-322-0154 <br>
+                    COPYRIGHT &copy; Music Film Festival ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main_script/jquery-3.4.1.min.js"></script>
+    <script src="../main_script/scriptTem.js"></script>
+    <script src="../main_script/script_bbs.js"></script>
+    
+</body>
+
+</html>

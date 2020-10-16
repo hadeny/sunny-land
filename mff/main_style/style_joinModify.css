@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body {
+    background-color: #fffbef;
+}
+/*reset 끝*/
+
+/*내용 시작*/
+#con_wrap {
+    width: 1000px;
+    margin:0 auto;
+    border: 4px solid #333;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#back { /*콘텐츠 백그라운드*/
+    background-image: url("../images/back.png");
+    width: 100%;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+#con_wrap img{
+    margin:20px;
+}
+#con_wrap>p {
+    color: #d40707;
+    padding-left:310px;
+}
+#con_wrap>form>table {
+    margin:0px auto;
+    width: 500px;
+    border-spacing:10px;
+}
+#con_wrap table td{
+    height: 45px;
+    width: 500px;
+    border: 1px solid #333;
+    text-align: left;
+    padding-left:10px;
+    font-size: 18px;
+    padding-right:10px;
+}
+#con_wrap table select#year, select#month, select#day{
+    font-size: 17px;
+    padding:0 10px;
+}
+
+#con_wrap table td>input {
+    height: 30px;
+    width:300px;
+    font-size: 18px;
+    border:none;
+}
+#con_wrap table td #userEmail01,
+#con_wrap table td #userEmail02 {
+    width: 140px;
+}
+#con_wrap table td #userEmail03 {
+    font-size:16px;
+}
+
+#con_wrap table td:nth-child(2) {
+    color: red;
+    width: 55px;
+}
+#con_wrap table td>button {
+    border:none;
+    font-size: 17px;
+    background-color: #fff;
+    padding:3px;
+    cursor: pointer;
+    font-weight: bold;
+    float:right;
+}
+#con_wrap table td span.red,
+#con_wrap table td span {
+    font-size: 16px;
+    color: #d40707;
+}
+#con_wrap table td p.guide {
+    font-size: 14px;
+    margin-bottom:20px;
+}
+#con_wrap table tr:nth-child(9)>td,
+#con_wrap table tr:nth-child(9)~tr>td {
+    border:none;
+    padding:0;
+}
+#con_wrap table table {
+    border: 1px solid #000;
+    width: 500px;
+    margin:0;
+    border-spacing: 10px;
+    padding-left:0px;
+}
+#con_wrap table input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+#con_wrap table table>tbody>tr>th {
+    border-bottom: 1px solid #000;
+}
+
+#con_wrap table table>tbody>tr>td {
+    border:none;
+}
+#con_wrap table table>tbody>tr>td>a {
+    font-size: 14px;
+}
+#con_wrap table tr>td>#joinBtn,
+#con_wrap table>tbody>tr>td>button#modifyBtn {
+    width: 500px;
+    height: 50px;
+    margin:20px auto;
+    border:none;
+    background-color: #333;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    margin-bottom:60px;
+}
+
+/*내용 끝*/
+
+#con_wrap table tr>td.notmodi>span.gray {
+    color: #888;
+}
+#con_wrap table tr>td.chkNon {
+    font-size: 16px;
+    height: 30px;
+    border:none;
+}
+#con_wrap table tr>td.no {
+    border: 1px solid #333;
+    padding-right:10px;
+    padding-left:10px;
+}

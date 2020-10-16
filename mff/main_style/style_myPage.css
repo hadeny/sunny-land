@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald&display=swap');
+
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body {
+    background-color: #fffbef;
+}
+/*reset 끝*/
+
+#con_wrap {
+    width: 900px;
+    margin:0 auto;
+    padding-bottom:60px;
+    border: 4px solid #333;
+    background-color: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#back { /*콘텐츠 백그라운드*/
+    background-image: url("../images/back.png");
+    width: 100%;
+    padding-top:100px;
+    padding-bottom:100px;
+}
+
+/*내정보 시작*/
+#con_wrap img {
+    margin:20px 0 40px 30px;
+}
+#myPage {
+    margin: 0 auto;
+    width: 600px;
+    display: table;
+}
+#myPageRow {
+    display: table-row;
+}
+#left, #right {
+    display: table-cell;
+    vertical-align: top;
+}
+#myPage p.name {
+    font-size: 30px;
+}
+#left table {
+    line-height: 35px;
+}
+#left table>tbody>tr>td:first-child{
+    font-size: 19px;
+}
+#left table>tbody>tr>td:nth-child(2) {
+    padding-left:20px;
+    color: #555;
+}
+#left button {
+    margin-top:20px;
+    margin-right:5px;
+    padding:5px;
+    font-size: 17px;
+    background-color: #fff;
+    border: 1px solid #555;
+    cursor: pointer;
+    border-radius: 3px;   
+}
+#right {
+    text-align: center;
+    width: 250px;
+    background-color: #1c4f46;
+    border-radius: 5px;
+}
+#right>p {
+    color: #fff;
+    margin-top:10px;
+}
+#right>ul {
+list-style: none;
+line-height:40px;
+margin-top:15px;
+}
+#right>ul>li{
+    font-size:19px;
+}
+#right>ul>li>a {
+    color: #fff;
+}
+/*내정보 끝*/
+
+/*탈퇴 시작*/
+#outbox {
+    width: 700px;
+    margin:0 auto;
+    text-align: center;
+}
+#border {
+    border: 1px solid #000;
+    padding:15px;
+    text-align: left;
+    padding-bottom:20px;
+}
+#border>ul {
+    list-style: none;
+    padding-left:10px;
+    line-height: 30px;
+}
+#outbox>p{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: red;
+}
+#outbox>button {
+    height: 45px;
+    border:none;
+    width: 300px;
+    background-color: #111;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin:0 auto;
+}
+#border>ul.reason input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+/*탈퇴 끝*/

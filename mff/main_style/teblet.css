@@ -1,0 +1,171 @@
+/*-----데스크탑-----*/
+@media all and (max-width:1290px) {
+    #wrap {width:100%;}
+    .main_container, .aside_container, .section_container, .footer_container{width: 100%;}
+    #youtube >iframe {width: 90%; padding:1%;}
+}
+
+@media all and (max-width:1105px) {
+    
+    body {padding-top:50px;}
+    #header {background-color: #ddb0a7; background-image: none; height: 50px;}
+    #header > h1 a {background:url("../images/logo125_40.png"); width: 125px; height: 40px; margin:5px 0 0 0;}
+    
+    #header .all{top:30%; left: 4%; display:block; color:transparent; position: relative; height: 18px; width: 33px; border-top:3px solid #000; border-bottom:3px solid #000;}
+    #header .all:before {content: ""; position: absolute; left:0; top:50%; width: 33px; height: 3px; background-color: #000; margin-top:-1.5px;}
+    
+
+    #header .navi {width: 70%; position: absolute; left:-120%; transition:all 0.5s; top:0; height:600px; background: #eee3d3;}
+    #header .navi.on {left:0;}
+    #header .navi.on > ul.two {display:block; padding:25px 0 30px 10px; border-bottom:1px solid black; margin:0 25px 0 20px;}
+    #header .navi.on > ul.two li {display:inline-block; width: 77px; height: 22px; line-height: 19px; margin:0 10px 0 0 ;text-align: center; border:1px solid #555; border-radius: 2px;cursor:pointer;}
+    #header .navi.on > ul.two li:hover {background:#fff;}
+    #header .navi.on > ul.two li a {font-size: 14px;}
+        
+    #header .navi.on > .gnb > ul li > ul {margin-top:0;}
+    #header .close {display:block; width: 35px; height: 35px;position: absolute; right:5%; top:4%; color: transparent;}
+    #header .close:before {content:""; background: #5a5a5a; top:0; left:48%; transform: rotate(45deg); position: absolute; width: 1px; height: 100%;}
+    #header .close:after {content:""; background: #5a5a5a; top:0; right:47%; transform: rotate(-45deg); position: absolute; width: 1px; height: 100%;}
+    
+    #nav {float:none; padding:0 0 0 20px;}
+    #nav > ul li.join {display: none}
+    #nav > ul li {display: block; float:none;}
+    #nav > ul li >a {display: inline-block; height: 43px; line-height: 43px; width:100%; padding:0 10px; border-bottom:1px solid #bbb;}
+    #nav > ul > li > a:hover {background: #1c4f46; color: #fefefe; font-weight: normal;}
+    #nav > ul > li:hover > a {background: #1c4f46; color: #fefefe; font-weight: normal;}
+    #nav > ul li > ul {display:none; position: relative; margin:0; border:none; border-radius:0;}
+    #nav > ul li > ul li {float:left; width: 100%; background: #fff; padding:0; display:block; text-align: left;}
+    #nav > ul li > ul li:hover > a {font-weight: normal; text-decoration:none;}
+    
+    .black {display:none; position: fixed; z-index: 9; top:0; left:0; width: 100%; height: 100%; background:rgba(0,0,0,0.7);}
+    
+    #main, #main_container,#main_container > div {height: 400px;}
+    
+    #section .section_container > #movie ul li {width: 30.6666%; }
+    
+    #section .section_container > #review #tabArea #tab1 ul li .name {left:25%; }
+    #section .section_container > #review #tabArea #tab1 ul li > a {word-wrap: break-word; text-overflow: ellipsis; white-space: normal;}
+    #section .section_container > #review #tabArea #tab1 ul li .quote {left:3%;}
+    
+    #section .section_container > #review #tabArea #tab1 ul li{width: 46%; margin:1.5% 2%;}
+    #section .section_container > #review #tabArea #tab1 ul li:nth-child(3) {display: none;}
+    
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice {margin:2% auto;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice .quote-left {left:2%;}
+}
+
+/*-----태블릿-----*/
+
+@media all and (max-width:906px) {
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 80%; padding-left:5%;}
+}
+
+
+@media all and (max-width:774px) {
+    
+    #header .close {width: 25px; height: 25px; }
+    
+    #section .section_container > .program h2, 
+    #section .section_container > #review #tabArea #tabBtn button {font-size: 22px;}
+    #section .section_container > #movie > h2 {width: 94.1%;}
+    #section .section_container > #movie ul {width: 94%; margin:0 auto; padding:2%;}
+    #section .section_container > #movie ul li {width:46.5%; margin:1.3% 1.3% 10% 1.3%;}
+    
+    #section .section_container > #review #tabArea #tab1 ul li .quote {left:4%;}
+    #section .section_container > #review #tabArea #tab1 ul li>span:nth-child(3) {left:5%;}
+    #section .section_container > #review #tabArea #tab1 ul li{width: 93.3%; margin:2% 3%;}
+    #section .section_container > #review #tabArea #tab1 ul li:nth-child(2) {display: none;}
+    
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice a {font-size:14px;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice .quote-left {left:0; top:-34%;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice .quote-right {display: none;}
+    #aside .aside_container > #shortcut {padding:2%;}
+    #aside .aside_container > #shortcut ul li {width: 23%; margin:2%; border:1px solid #ccc; }
+    #aside .aside_container #shortcut ul li .short_name {color: #ccc; padding:3%; font-size: 16px; margin:0 auto; border:none; text-align: center;}
+    #aside .aside_container #shortcut ul li .short_des {display: none;}
+    
+    #banner {margin:6% 0;}
+    #banner .container {width: 400px; height: 60%; }
+    #banner .container .min_logo {width: 81px; height: 65px; left:11%; top:17%;}
+    #banner .container a {width: 95px; height: 95px; left:40%; top:10%;}
+    #banner .container .txt {font-size: 1em; right:6%; top:38%;}
+    
+    .footer_container {display:block; text-align: center;}
+    .footer_container .foot_row {display:block;}
+    .footer_container .foot_row .foot_sns,
+    .footer_container .foot_row .foot_info {display:block;}
+    #logologo {display:none;}
+    .foot_sns {display:inline-block; padding-top:3%;}
+    .foot_info {width:auto;}
+    
+}
+
+@media all and (max-width:681px) {
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 76%; padding-left: 6%;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice {margin:3% auto;}
+}
+
+@media all and (max-width:568px) {
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice {margin:4% auto;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul {width:90%;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 70%; padding-left: 6%;}
+}
+
+/*-----폰-----*/
+@media all and (max-width:504px) {
+    
+    #main, #main_container,#main_container > div {height: 300px;}
+    #section .section_container > .program {padding:5%;}
+    
+    #aside .aside_container #shortcut ul li .short_name {font-size: 13px;}
+
+    #section .section_container > .program h2, 
+    #section .section_container > #review #tabArea #tabBtn button {font-size: 21px;}
+    #section .section_container > #review #tabArea #tab1 ul li .quote {left:2%;}
+    #section .section_container > #review #tabArea #tab1 ul li>span:nth-child(3) {left:2%;}
+    #section .section_container > #review #tabArea #tab1 ul li{ width: 93.3%; margin:5% 3%;}
+    #section .section_container > #review #tabArea #tab1 ul li > a {padding:3% 3% 3% 8%;text-overflow:ellipsis; white-space:nowrap; word-wrap:normal; overflow:hidden;}
+    
+    #section .section_container > #movie ul {width: 90%; margin:0 auto; padding:4%;}
+    #section .section_container > #movie ul li {margin:2% 2% 10% 2%; width: 95%;}
+    
+    #banner {margin:8% 0;}
+    #banner .container {width: 330px; height: 55%;}    
+    #banner .container .min_logo {background:url("../images/logo125_40.png"); background-size: 100% 100%;width: 107px; height: 34px; left:52%; top:20%;}
+    #banner .container a {width: 90px; height: 90px; left: 13%; top: 7%; }
+    #banner .container .txt {font-size: 1.1em; right: 14%; top: 60%;}
+    #youtube >iframe {height: 90%; padding:1%;}
+    
+}
+
+@media all and (max-width:489px) {
+    
+    #section .section_container > #movie > h2 {width: 90%;}
+    
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice {margin:6% auto;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 68%; padding-left: 8%;}
+    .footer_container .foot_row .foot_sns,
+    .footer_container .foot_row .foot_info {font-size: 0.9em;}
+}
+
+@media all and (max-width:457px) {
+     #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 66%; padding-left: 8%;}
+}
+
+@media all and (max-width:431px) {
+     #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 63%; padding-left: 8%;}
+}
+@media all and (max-width:396px) {
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice .quote-left {top: -34%;font-size: 100px;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice {margin:8% auto;}
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 59%; padding-left: 8%;}
+    #banner .container {width: 260px; height: 60%;}
+    #banner .container .min_logo {width: 100px; height: 32px; left: 51%; top: 24%;}
+    #banner .container a {left:6%; top:7%;}    
+    #banner .container .txt {font-size: 1em; right: 8%; top: 57%;}
+}
+
+@media all and (max-width:359px) {
+    #section .section_container > #review #tabArea #tab2 .noticeArea .notice ul li span:first-child {width: 57%; padding-left: 8%;}
+    
+}

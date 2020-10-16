@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR|Oswald&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+#con_wrap {
+    width: 1100px;
+    margin:0 auto;
+    display: table;
+    padding:40px 0;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body {
+    background-color: #fffbef;
+}
+/*reset 끝*/
+
+#wrapRow {
+    display: table-row;
+}
+#cnb,#contentInfo {
+    display: table-cell;
+    vertical-align: top;
+}
+#contentInfo {
+width:700px;
+}
+
+/*왼쪽 내비게이션 시작*/
+#cnb {
+    width: 160px;
+    padding-right:60px;
+}
+#cnb ul {
+    margin:0 auto;
+    background-color: #1c4f46;
+    border:4px solid #333;
+    border-radius: 20px;
+    width: 150px;
+    height: 300px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.21), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#cnb>ul>li,#cnb>ul>li>a {
+    color:#fffbef;
+}
+#cnb>ul>li:first-child {
+    font-size: 18px;
+    padding:20px 0;
+}
+#cnb>ul>li.selected {
+    font-weight: bold;
+    font-size: 19px;
+}
+/*왼쪽 내비게이션 끝*/
+
+/*콘텐츠 제목 시작*/
+#contentInfo>h1 {
+    margin-bottom:10px;
+}
+#contentInfo>span {
+    font-size: 14px;
+}
+#contentInfo>form>button#writeBtn { /*버튼*/
+    cursor: pointer;
+    margin-left:380px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 15px;
+    padding:3px 7px;
+    border:3px solid #333;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+}
+#contentInfo>form>input {
+    border:3px solid #333;
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    text-indent: 10px;
+    margin-top:40px;
+    margin-left:10px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+}
+#contentInfo>form img {
+    margin-left:15px;
+    vertical-align: bottom;
+    cursor: pointer;
+    padding-bottom:5px;
+    box-sizing: content-box;
+}
+/*콘텐츠 제목 끝*/
+
+/*표 시작*/
+#infoTbl {
+    margin-top:20px;
+}
+#infoTbl>table {
+    border-collapse: collapse;
+}
+#infoTbl td:first-child { /*번호셀*/
+    width: 65px;
+    text-align: center;
+}
+#infoTbl td {
+    border-bottom:1px solid #d3d3d3;
+    
+}
+#infoTbl td:nth-child(2),
+#infoTbl th:nth-child(2) {
+    width: 540px;
+    padding:10px;
+}
+#infoTbl td:nth-child(3),
+#infoTbl th:nth-child(3) {
+    width: 140px;
+    padding:10px;
+    text-align: center;
+} 
+
+#infoTbl th { /*제목*/
+    border-bottom: 1px solid #666;
+    font-size: 18px;
+    border-top:1px solid #666;
+}
+
+/*표 끝*/
+
+/*쪽번호 시작*/
+#number {
+    width: 780px;
+}
+#number>ul  {
+    list-style-type: none;
+    text-align: center;
+    margin:50px auto;
+}
+#number>ul>li {
+    display: inline-block;
+    padding:8px 15px;
+}
+#number>ul>li>a {
+    font-size: 17px;
+    font-weight: bold;
+}
+#number>ul>li:hover {
+    background-color:#1c4f46;
+    border-radius: 30px;
+}
+#number>ul>li:hover>a,
+#number>ul>li:hover>a>i{
+    color: #fff;
+}
+#number>ul>li>a>i {
+    font-size: 20px;
+}
+/*쪽번호 끝*/
+/*---------------bbs템플릿 끝---------------*/
+
+
+/*---------------자유게시판 글쓰기 시작---------------*/
+#freebbs {
+    border: 4px solid #000;
+    border-radius: 20px;
+    margin-top:30px;
+    margin-left:-10px;
+    width: 740px;
+    padding:13px;
+}
+#freebbs table {
+    border-collapse:collapse;
+}
+#freebbs table td {
+    padding:5px 3px;
+    font-weight: bold;
+}
+#freebbs textarea {
+    width: 680px;
+    height: 300px;
+    border: 1px solid #000;
+    text-indent: 10px;
+    padding-top:10px;
+}
+#freebbs select {
+    width: 80px;
+    height: 30px;
+    border:1px solid black;
+}
+#freebbs input[type="text"] {
+    width: 480px;
+    height: 30px;
+    border: 1px solid #000;
+}
+#freebbs input[type="file"] {
+    height: 30px;
+}
+#freebbs td span {
+    color: rgb(206, 8, 8);
+    font-size: 13px;
+    font-weight: normal;
+}
+#freebbs form button {
+    margin-left:300px;
+    margin-top:20px;
+}
+#freebbs table button#goWriteBtn { /*버튼*/
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 15px;
+    padding:3px 7px;
+    border:3px solid #333;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.17);
+}
+/*---------------자유게시판 글쓰기 끝---------------*/
+
+/*---------------네티즌 리뷰 시작---------------*/
+#con_review {
+    width: 800px;
+    margin-top:20px;
+}
+/*포스터 시작*/
+#poster {
+    width: 800px;
+    height: 380px;
+    border-top: 2px solid #000;
+}
+#poster figure {
+    float:left;
+    margin-right:10px;
+    text-align: center;
+    margin-left:8px;
+}
+#poster h2 {
+    margin-top:5px;
+    margin-left:20px;
+    margin-bottom:10px;
+}
+#reviewer {
+    clear:both;
+}
+div.star {
+    width: 115px;
+    text-align: left;
+}
+div.star,
+div.star span {
+    display: inline-block;
+    background: url("../images/bbs/star.png")no-repeat;
+    height: 19.5px;
+    overflow: hidden;
+}
+div.star span {
+    background-position: left bottom;
+    line-height: 0;
+    vertical-align: top;
+}
+/*포스터 끝*/
+
+/*한줄평 시작*/
+#con_review>#reviewF {
+    width: 800px;
+    margin-top:80px;
+}
+#con_review>#reviewF>#reWrite {
+    height: 100px;
+}
+
+#reWrite {
+    display: table;
+    border-top: 2px solid #000;
+    width: 800px;
+}
+#writeRow {
+    display: table-row;
+}
+#mvName, #write {
+    display: table-cell;
+    vertical-align: top;
+    height: 100px;
+}
+#mvName {
+    padding:20px;
+}
+#mvName>select {
+    font-size: 18px;
+    padding: 4px 8px;
+    margin-bottom:10px;
+}
+#mvName>input {
+    width: 40px;
+    height: 30px;
+}
+#write {
+    padding:15px;
+    font-size: 19px;
+    font-weight: bold;
+    padding-left:25px;
+}
+#write> table input {
+    width: 460px;
+    height: 40px;
+    font-size: 16px;
+    border:none;
+    margin:0;
+}
+#write> table {
+    border-collapse: collapse;
+    margin-top:10px;
+}
+#write> table td {
+    border: 1px solid #ccc;
+    height: 30px;
+    background-color: #fff;
+}
+
+#write>table button {
+    font-size: 19px;
+    padding:10px;
+    border:none;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+/*한줄평 끝*/
+
+/*리뷰들 시작*/
+#reviewer {
+    border-top: 2px solid #000;
+    border-bottom:2px solid black;
+}
+#reviewer>table {
+    border-collapse: collapse;
+}
+#reviewer>table td {
+    padding:10px;
+    border-bottom:1px solid #777;
+}
+#reviewer>table td:nth-child(2n) {
+    width: 660px;
+}
+#reviewer table td>p:first-child{
+    font-size: 14px;
+}
+#reviewer table td>p.contents {
+    font-weight: bold;
+}
+#reviewer table td>p.usN {
+    color: #970606;
+}
+/*리뷰들 끝*/
+
+
+/*---------------네티즌 리뷰 시작---------------*/

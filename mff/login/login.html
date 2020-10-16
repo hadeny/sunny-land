@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>로그인</title>
+    <link rel="stylesheet" href="../main_style/styleTem.css">
+    <link rel="stylesheet" href="../main_style/style_loginout.css">
+</head>
+
+<body>
+     <div id="headerF">
+        <header id="header">
+            <div id="logo">
+                <a href="../index.html"><img src="../images/logo165_118.png" width="168" height="128" alt="logo"></a>
+            </div>
+            <nav id="gnb">
+                <ul>
+                    <li>
+                        <a href="#">음악영화제</a>
+                        <ul>
+                            <li><a href="#">MFF 소개</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">History</a>
+                        <ul>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">전년도 수상작</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Program</a>
+                        <ul>
+                            <li><a href="#">수상작</a></li>
+                            <li><a href="#">상영작</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Event</a>
+                        <ul>
+                            <li><a href="#">Goods</a></li>
+                            <li><a href="#">Gv일정</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Ticket</a>
+                        <ul>
+                            <li><a href="#">상영시간표</a></li>
+                            <li><a href="#">티켓안내</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Community</a>
+                        <ul>
+                            <li><a href="../bbs/info.html">공지사항</a></li>
+                            <li><a href="../bbs/free.html">자유게시판</a></li>
+                            <li><a href="../bbs/review.html">네티즌 리뷰</a></li>
+                        </ul>
+                    </li>
+                    <li class="bold">
+                        <a href="../login/login.html">로그인/회원가입</a>
+                        <ul>
+                            <li><a href="../login/login.html">로그인</a></li>
+                            <li><a href="../login/join.html">회원가입</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div><!--headerF-->
+    <div id="back">
+    <div id="con_wrap">
+        <img src="../images/logo165_118.png" width="168" height="128" alt="logo">
+        <form action="../log_index.html" method="get" name="frm01">
+            <p id="inputID">아이디 </p>
+            <input type="text" name="uID" id="uID"><br>
+            <p id="inputPW">비밀번호 </p>
+            <input type="password" name="uPW" id="uPW"><br>
+            <button type="button" id="btn" >로그인</button>
+        </form>
+        <div class="bottom">
+            <span>아직도 회원이 아니신가요?</span>&nbsp;&nbsp;&nbsp;
+            <a href="../login/join.html">회원가입</a>
+        </div>
+    </div>
+    <!--con_wrap-->
+    </div><!--back-->
+    <footer id="footer">
+        <div class="footerFrame">
+            <div id="foot_logo">
+                <div id="logoFoot">
+                    <img src="../images/logo165_118.png"  width="168" height="128" alt="logo">
+                </div>
+                <div id="footerP">
+                    <a href="#">개인정보취급방침</a> | <a href="#">이용약관</a>
+                    <div id="sns">
+                        <a href="#"><img src="../images/sns_1.png" width="50" height="50" alt="sns_1"></a>
+                        <a href="#"><img src="../images/sns_2.png" width="50" height="50" alt="sns_2"></a>
+                        <a href="#"><img src="../images/sns_3.png" width="50" height="50" alt="sns_3"></a>
+                    </div><br><br>
+                    14545 경기 부천시 상동 541-1 메가플러스타워 6층 A동 602호 032-322-0154 <br>
+                    COPYRIGHT &copy; Music Film Festival ALL RIGHTS RESERVED.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main_script/jquery-3.4.1.min.js"></script>
+    <script src="../main_script/scriptTem.js"></script>
+    <script src="../main_script/script_loginout.js"></script>
+    
+</body>
+
+</html>
