@@ -1,4 +1,5 @@
-html,body{touch-action:none;overflow:hidden;width:100vw;height:100vh;}
+html,body{width:100%;height:100%;margin:0;padding:0;}
+/* html,body{touch-action:none;overflow:hidden;width:100vw;height:100vh;} */
 .back{background-image:url(../images/background.jpg);}
 h3{font-family:cooper-black-std, serif; border-bottom:1px solid #000;text-align:center;font-size:22px;padding:8px 0;}
 
