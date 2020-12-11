@@ -1,3 +1,10 @@
+//스크린 크기 구분
+let windowWidth = window.outerWidth;
+
+if(windowWidth < 500) {
+alert("PC 버전에 최적화된 화면입니다");
+}
+
 let slideSection = $(".list02"); //section.list02 부분만 슬라이드쇼
 let goImg = slideSection.find("img"); 
 
